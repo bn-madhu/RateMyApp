@@ -13,6 +13,7 @@ function App() {
       <div className="p-4">
         <StarRating rating={count} onRatingChange={setCount} size={50} />
         <p className="mt-2">Current Rating: {count}</p>
+        <p className={`text-2xl ${count <= 2?'text-red-600':count>2 && count<=4 ? 'text-yellow-600':'text-green-600'}`}>Rating is {count <= 2?'Low':count>2 && count<=4 ? 'Good':'Super!!'}</p>
       </div>
     </>
   )
