@@ -7,11 +7,11 @@ import path from 'path';
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
   build: {
-    lib: {
-      entry: path.resolve(__dirname, 'src/index.js'),
-      name: 'RateMyApp',
-      fileName: (format) => `ratemyapp.${format}.js`,
-    },
+    // lib: {
+    //   entry: path.resolve(__dirname, 'src/index.js'),
+    //   name: 'RateMyApp',
+    //   fileName: (format) => `ratemyapp.${format}.js`,
+    // },
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
@@ -22,4 +22,5 @@ export default defineConfig({
       },
     },
   },
+  base: '/RateMyApp/',
 })
