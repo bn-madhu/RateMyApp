@@ -1,3 +1,12 @@
+# google-map-for-agent
+
+A reusable Google Maps navigation component for React apps.  
+Perfect for agent-based services like Ola, Uber, or delivery apps.
+
+## Install
+```sh
+npm install google-map-for-agent
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

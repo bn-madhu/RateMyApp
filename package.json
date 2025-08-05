@@ -5,12 +5,19 @@
   "type": "module",
   "main": "dist/ratemyapp.umd.js",
   "module": "dist/ratemyapp.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
   },
-  "keywords": ["star-rating", "react", "tailwind", "component"],
+  "keywords": [
+    "star-rating",
+    "react",
+    "tailwind",
+    "component"
+  ],
   "author": "Madhu BN",
   "license": "MIT",
   "scripts": {
@@ -21,8 +28,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "google-map-for-agent": "^1.0.5",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
     "tailwindcss": "^4.1.6"
   },
   "devDependencies": {
