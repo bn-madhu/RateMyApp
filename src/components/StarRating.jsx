@@ -8,7 +8,7 @@ export const StarRating = ({
   color = "#facc15",
   className = ""
 }) => {
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState(0);
 
   const StarIcon = ({ filled }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill={filled ? color : "none"} viewBox="0 0 24 24" stroke={filled ? color : "#d1d5db"} strokeWidth={2} width={size} height={size} className="transition-colors duration-200">
@@ -24,10 +24,10 @@ export const StarRating = ({
           key={index}
           className={"cursor-pointer"}
           onMouseEnter={() => setHovered(index)}
-          onMouseLeave={() => setHovered(null)}
+          onMouseLeave={() => setHovered(0)}
           onClick={() => onRatingChange(index + 1)}
           >
-          <StarIcon filled={hovered !== null ? index <= hovered : index < rating} />
+          <StarIcon filled={hovered !== 0 ? index <= hovered : index < rating} />
         </div>
       ))}
     </div>
