@@ -27,7 +27,6 @@ function App() {
 
       <div className="p-4 flex items-center">
         <MapServices 
-          className="w-full h-96"
           locations={locations}
         />
       </div>
